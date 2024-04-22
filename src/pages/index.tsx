@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Image from "next/image"
 
 import GithubLogoImg from "../assets/github-logo.svg"
@@ -8,6 +9,9 @@ import styles from "../styles/home.module.css"
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Acessibilidade com React.js</title>
+      </Head>
       <div className={styles.header}>
         <Image src={LogoImg} alt='rockeseat logo' width={286 / 2} />
         <div className={styles.nav}>
