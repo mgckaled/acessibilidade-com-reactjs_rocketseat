@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import { useState } from "react"
 
 import GithubLogoImg from "../assets/github-logo.svg"
 import LogoImg from "../assets/logo.svg"
@@ -7,20 +8,28 @@ import LogoImg from "../assets/logo.svg"
 import styles from "../styles/home.module.css"
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  function handleModalOpen() {
+    setIsModalOpen(true)
+  }
+
   return (
     <>
       <Head>
         <meta charSet='UTF-8'></meta>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
         <title>Desenvolvendo uma web acessível | Rocketseat Blog</title>
-        <meta 
-          name='description' content='Protocolos e diretrizes orientam o desenvolvimento de tecnologias acessíveis, mas é preciso olhar para isas de tudo isso'></meta>
+        <meta
+          name='description'
+          content='Protocolos e diretrizes orientam o desenvolvimento de tecnologias acessíveis, mas é preciso olhar para isas de tudo isso'
+        ></meta>
       </Head>
 
       <header className={styles.header}>
         <Image src={LogoImg} alt='blog logo image' width={286 / 2} unoptimized />
         <nav className={styles.nav}>
-          <a href='https://github.com/mgckaled' aria-label='Github'>
+          <a href='https://github.com/mgckaled' target='_blank' aria-label='Github'>
             <Image src={GithubLogoImg} alt='github logo icon' width={28} height={28} unoptimized />
           </a>
         </nav>
@@ -59,9 +68,20 @@ export default function Home() {
         <Image src={LogoImg} alt='blog logo image' width={286 / 2} unoptimized />
 
         <nav className={styles.nav} aria-label='rodape'>
-          <a href='https://github.com/mgckaled'>Termos de uso</a>
+          <button type='button' onClick={handleModalOpen}>
+            Termos de uso
+          </button>
         </nav>
       </footer>
+
+      {isModalOpen && (
+        <div className={styles.modal}>
+          <h2>Termos de uso</h2>
+          <p>Esses são os termos de uso</p>
+        </div>
+      )}
     </>
   )
 }
+
+

@@ -13,6 +13,10 @@ select {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   background-color: #121214;
   color: #a8a8b3;
