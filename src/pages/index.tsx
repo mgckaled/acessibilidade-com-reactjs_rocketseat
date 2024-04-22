@@ -53,7 +53,7 @@ export default function Home() {
         </article>
       </main>
 
-      <footer className={styles.header}>
+      <footer className={styles.footer}>
         <Image src={LogoImg} alt='blog logo image' width={286 / 2} unoptimized />
 
         <nav className={styles.nav} aria-label='rodape'>
