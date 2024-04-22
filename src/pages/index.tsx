@@ -16,10 +16,10 @@ export default function Home() {
       </Head>
 
       <header className={styles.header}>
-        <Image src={LogoImg} alt='blog logo image' width={286 / 2} />
+        <Image src={LogoImg} alt='blog logo image' width={286 / 2} unoptimized />
         <nav className={styles.nav}>
-          <a href='https://github.com/mgckaled'>
-            <Image src={GithubLogoImg} alt='github logo icon' width={28} height={28} />
+          <a href='https://github.com/mgckaled' aria-label='github'>
+            <Image src={GithubLogoImg} alt='github logo icon' width={28} height={28} unoptimized />
           </a>
         </nav>
       </header>
@@ -54,14 +54,14 @@ export default function Home() {
       </main>
 
       <footer className={styles.header}>
-        <Image src={LogoImg} alt='blog logo image' width={286 / 2} />
+        <Image src={LogoImg} alt='blog logo image' width={286 / 2} unoptimized />
 
-        <nav className={styles.nav} aria-label='footer'>
-          <a href='https://github.com/mgckaled'>Termos de uso</a>
+        <nav className={styles.nav} aria-label='rodape'>
+          <a href='https://github.com/mgckaled' aria-label='termos-de-uso'>
+            Termos de uso
+          </a>
         </nav>
       </footer>
     </>
   )
 }
-
-
