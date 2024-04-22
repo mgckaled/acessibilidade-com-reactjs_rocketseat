@@ -12,13 +12,15 @@ export default function Home() {
       <Head>
         <meta charSet='UTF-8'></meta>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
-        <title>Acessibilidade com React.js</title>
+        <title>Desenvolvendo uma web acessível | Rocketseat Blog</title>
+        <meta 
+          name='description' content='Protocolos e diretrizes orientam o desenvolvimento de tecnologias acessíveis, mas é preciso olhar para isas de tudo isso'></meta>
       </Head>
 
       <header className={styles.header}>
         <Image src={LogoImg} alt='blog logo image' width={286 / 2} unoptimized />
         <nav className={styles.nav}>
-          <a href='https://github.com/mgckaled' aria-label='github'>
+          <a href='https://github.com/mgckaled' aria-label='Github'>
             <Image src={GithubLogoImg} alt='github logo icon' width={28} height={28} unoptimized />
           </a>
         </nav>
@@ -27,12 +29,12 @@ export default function Home() {
       <main>
         <article className={styles.content}>
           <header>
-            <h2>Desenvolvendo uma web acessível</h2>
+            <h1>Desenvolvendo uma web acessível</h1>
 
-            <h4>
+            <h2>
               Protocolos e diretrizes orientam o desenvolvimento de tecnologias acessíveis, mas é preciso olhar para
               além de tudo isso
-            </h4>
+            </h2>
           </header>
 
           <p>
@@ -57,9 +59,7 @@ export default function Home() {
         <Image src={LogoImg} alt='blog logo image' width={286 / 2} unoptimized />
 
         <nav className={styles.nav} aria-label='rodape'>
-          <a href='https://github.com/mgckaled' aria-label='termos-de-uso'>
-            Termos de uso
-          </a>
+          <a href='https://github.com/mgckaled'>Termos de uso</a>
         </nav>
       </footer>
     </>
