@@ -1,40 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD014 -->
 
-## Getting Started
+# Curso Rocketseat - Acessibilidade com ReactJS
 
-First, run the development server:
+<div align="center">
+  <img alt="Made by mgckaled" src="https://img.shields.io/badge/made%20by-mgckaled-darkblue">
+  <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/mgckaled/acessibilidade-com-reactjs_rocketseat">
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Conteúdo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Fundamentos da acessibilidade, Guidelines WCAG e leitores de tela.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Links Úteis
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### W3C
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- <a href="https://www.w3.org/WAI/">Web Acessibility Initiative (WAI) | W3C</a>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Critérios da WCAG 2.1
 
-## Learn More
+- <a href="https://www.w3.org/TR/WCAG21/" target="_blank" >Guideline</a>
+- <a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_blank" >Entendendo os critérios</a>
+- <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" >Como atingir a WCAG</a>
 
-To learn more about Next.js, take a look at the following resources:
+### Bibliotecas do React
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- <a href="https://www.npmjs.com/package/@axe-core/react" target="_blank" >@axe-core/react</a>
+- <a href="https://www.radix-ui.com/" target="_blank" >Radix UI</a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Extensões do Chrome
 
-## Deploy on Vercel
+- <a href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd" target="_blank" >axe Devtools</a>
+- <a href="https://chromewebstore.google.com/detail/landmark-navigation-via-k/ddpokpbjopmeeiiolheejjpkonlkklgp" target="_blank" >Landmark Navigation via Keyboard or Pop-up</a>
+- <a href="https://chromewebstore.google.com/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=pt-BR" target="_blank" >Screen Reader</a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Extensões do VS Code
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- <a href="https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter" target="_blank" >axe Accessibility Linter</a>
+
+### MDN Web Docs
+
+- <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/landmark_role" target="_blank" >ARIA: landmark role</a>
+- <a href="https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA/ARIA_Techniques" target="_blank" >ARIA techniques</a>
+- <a href="https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA" target="_blank" >ARIA</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role" target="_blank" >ARIA: dialog role</a>
+
+---
+
+<h5 align="center">
+  2024 - <a href="https://github.com/mgckaled/" target="_blank">Marcel Kaled</a>
+</h5>
